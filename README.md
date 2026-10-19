@@ -1,2 +1,13 @@
 # omitz.io
-Training Website
+
+The public homepage for Omitz, LLC. Plain HTML and CSS, no build step.
+
+- `index.html` is the page content
+- `style.css` is the styling
+- `CNAME` tells GitHub Pages to serve the site at omitz.io
+
+The AI ethics training app lives separately at training.omitz.io (repo `iamtall21/omitzethics`).
+
+## Editing
+
+Open `index.html`, change the text, commit. To preview locally, open the file in a browser.
