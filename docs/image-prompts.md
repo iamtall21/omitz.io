@@ -1,6 +1,6 @@
 # Hydrogen and BESS imagery
 
-The five WebP assets below were generated with the built-in image_gen tool using the previous site images as composition and subject references. They are AI-generated illustrative imagery, not photographs of documented installations or measured thermal data. Original site assets remain in assets/ for reference. WebP delivery files are resized to a maximum width of 1200 pixels at quality 87.
+The five WebP assets below were generated with the built-in image_gen tool using the previous site images as composition and subject references. They are AI-generated illustrative imagery, not photographs of documented installations or measured thermal data. Original site assets remain in assets/ for reference. WebP delivery files are resized to a maximum width of 1200 pixels at quality 87. The original hydrogen-flame.jpg thermal image is used on the homepage; hydrogen-inspection.webp is retained as an unused alternative.
 
 ## hydrogen-technician.webp
 
