@@ -3,60 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Omitz | NFPA 2 and NFPA 855 training</title>
-  <meta name="description" content="Hydrogen (NFPA 2) and battery energy storage (NFPA 855) code training from Phil Clark, MS, CSP, CIH.">
-  <meta property="og:title" content="Omitz | Authority on Insight">
-  <meta property="og:description" content="Hydrogen (NFPA 2) and battery energy storage (NFPA 855) code training from Phil Clark, MS, CSP, CIH.">
+  <title>NFPA 2 and NFPA 855 Training for Hydrogen and Energy Storage | Omitz</title>
+  <meta name="description" content="Instructor-led training on NFPA 2 (hydrogen) and NFPA 855 (stationary energy storage) for engineers, code officials and safety professionals, taught by Phil Clark, MS, CIH, CSP.">
+  <meta property="og:title" content="NFPA 2 and NFPA 855 Training for Hydrogen and Energy Storage | Omitz">
+  <meta property="og:description" content="Instructor-led training on NFPA 2 (hydrogen) and NFPA 855 (stationary energy storage), taught by Phil Clark, MS, CIH, CSP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://omitz.io/">
-  <meta property="og:image" content="https://omitz.io/assets/logo.png">
+  <meta property="og:image" content="https://omitz.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Omitz">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://omitz.io/">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/raleway-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "EducationalOrganization",
+   "@id": "https://omitz.io/#org",
+   "name": "Omitz, LLC",
+   "url": "https://omitz.io/",
+   "logo": "https://omitz.io/assets/logo.png",
+   "slogan": "Authority on Insight",
+   "email": "phil.clark@omitz.io",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Louisville",
+    "addressRegion": "CO",
+    "addressCountry": "US"
+   },
+   "founder": {
+    "@id": "https://omitz.io/#phil"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/omitz"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://omitz.io/#phil",
+   "name": "Phil Clark",
+   "honorificSuffix": "MS, CIH, CSP",
+   "jobTitle": "Founder and CEO",
+   "worksFor": {
+    "@id": "https://omitz.io/#org"
+   },
+   "image": "https://omitz.io/assets/phil-clark.webp",
+   "url": "https://omitz.io/about.html",
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Certified Industrial Hygienist (CIH)"
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Certified Safety Professional (CSP)"
+    }
+   ],
+   "knowsAbout": [
+    "Hydrogen safety",
+    "NFPA 2",
+    "NFPA 855",
+    "Battery energy storage systems",
+    "Industrial hygiene",
+    "Process safety",
+    "Gas detection",
+    "AI in environmental, health and safety practice"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/omitz"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://omitz.io/#site",
+   "name": "Omitz",
+   "url": "https://omitz.io/",
+   "publisher": {
+    "@id": "https://omitz.io/#org"
+   }
+  }
+ ]
+}
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="logo" href="/"><img src="assets/logo-white.png" alt="Omitz, Authority on Insight" width="160" height="57"></a>
-      <nav>
-        <a href="training.html">Training</a>
-        <a href="#about">About</a>
+      <a class="logo" href="index.html"><img src="assets/logo-white.png" alt="Omitz, Authority on Insight" width="160" height="57"></a>
+      <nav aria-label="Main navigation">
+        <div class="nav-menu">
+          <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="training-menu">Training</button>
+          <ul id="training-menu" class="nav-dropdown">
+            <li><a href="nfpa-2.html">NFPA 2<span>Hydrogen</span></a></li>
+            <li><a href="nfpa-855.html">NFPA 855<span>Energy storage</span></a></li>
+            <li><a href="ai-ethics.html">Ethical AI for ESH<span>Professional practice</span></a></li>
+          </ul>
+        </div>
+        <a href="about.html">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Rule 17: &ldquo;Omit needless words.&rdquo;</p>
-          <h1>Code training for <span class="grad">hydrogen</span> and <span class="grad">battery storage</span>.</h1>
-          <p class="lede">NFPA 2 and NFPA 855, taught by Phil Clark, CSP, CIH. For the engineers, code officials and safety teams who apply them.</p>
+          <h1>Code training for <span class="grad">hydrogen</span> and <span class="grad">energy storage</span>.</h1>
+          <p class="lede">Instructor-led courses on NFPA 2 and NFPA 855 for the engineers, code officials and safety professionals who design, permit and operate these systems. Taught by Phil Clark, MS, CIH, CSP.</p>
           <div class="actions">
-            <a class="button" href="training.html">See courses</a>
-            <a class="button ghost" href="https://training.omitz.io">AI ethics training</a>
+            <a class="button" href="#trainings">View courses</a>
+            <a class="button ghost" href="#contact">Schedule training</a>
           </div>
         </div>
         <img class="hero-img" src="assets/hydrogen-technician.webp" alt="Technician inspecting valves on a hydrogen process skid" width="1122" height="1402" fetchpriority="high">
       </div>
     </section>
 
-    <section id="trainings" class="trainings">
+    <section class="credentials" aria-label="Credentials">
+      <div class="wrap credential-grid">
+        <div><strong>20+ years</strong><span>in environmental, health and safety</span></div>
+        <div><strong>CIH &middot; CSP</strong><span>Certified Industrial Hygienist and Certified Safety Professional</span></div>
+        <div><strong>Since 2013</strong><span>hydrogen and energy storage safety at a national laboratory</span></div>
+        <div><strong>Lead instructor</strong><span>NFPA 2 for the AIChE Center for Hydrogen Safety</span></div>
+      </div>
+    </section>
+
+
+    <section id="trainings" class="trainings course-panel">
       <div class="wrap">
-        <p class="kicker">Courses</p>
-        <h2>Three courses</h2>
+        <p class="kicker">Training</p>
+        <h2>Courses</h2>
         <div class="cards">
           <article class="card">
             <img src="assets/hydrogen-tanks.webp" alt="Hydrogen storage vessels, pipework and an access ladder viewed from below" width="1200" height="675" loading="lazy">
             <div class="card-body">
               <p class="tag">Hydrogen</p>
               <h3>NFPA 2: Hydrogen Technologies Code</h3>
-              <p>The hydrogen code, end to end: gaseous and liquid storage, fueling stations, fuel cell power systems, generation, labs and repair garages.</p>
-              <p class="formats">8 hours</p>
-              <a href="training.html#nfpa-2">View course details &rarr;</a>
+              <p>A comprehensive review of the requirements for hydrogen production, storage, transfer and use, from general fire safety through fueling facilities, fuel cells, generation and laboratories.</p>
+              <p class="formats">8 hours &middot; live, in person</p>
+              <a href="nfpa-2.html">Course details &rarr;</a>
             </div>
           </article>
           <article class="card">
@@ -64,21 +157,35 @@
             <div class="card-body">
               <p class="tag">Energy storage</p>
               <h3>NFPA 855: Stationary Energy Storage Systems</h3>
-              <p>Stationary energy storage from installation through decommissioning: lithium-ion and other batteries, fuel cells, flywheels, and the protection each requires.</p>
-              <p class="formats">2-hour overview &middot; 4-hour Fundamentals (Ch. 1&ndash;8) &middot; 4-hour Advanced (Ch. 9&ndash;19) &middot; 8-hour complete</p>
-              <a href="training.html#nfpa-855">View course details &rarr;</a>
+              <p>The safety requirements for installing, commissioning, operating, maintaining and decommissioning stationary energy storage, including batteries, fuel cells and flywheels.</p>
+              <p class="formats">2, 4 or 8 hours &middot; live, in person</p>
+              <a href="nfpa-855.html">Course details &rarr;</a>
             </div>
           </article>
           <article class="card">
             <div class="card-art"><img src="assets/mark.png" alt="" width="96" height="116"></div>
             <div class="card-body">
-              <p class="tag">Professional ethics</p>
-              <h3>AI for ESH Professionals</h3>
-              <p>Interactive scenarios that test everyday AI use in EHS work against the BGC Code of Ethics. Runs in your browser.</p>
-              <p class="formats"><a href="training.html#ai-esh">View course details &rarr;</a></p>
+              <p class="tag">Professional practice</p>
+              <h3>Ethical AI Workflow for ESH Professionals</h3>
+              <p>An ethics framework aligned with the BGC and BCSP codes, and a guided build of a working OEHS tool. A self-paced AI ethics module is also available online.</p>
+              <p class="formats">Half day &middot; virtual</p>
+              <a href="ai-ethics.html">Course details &rarr;</a>
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-label="Testimonials">
+      <div class="wrap quote-grid">
+        <blockquote>
+          <p>&ldquo;It was a great workshop. Everyone that attended felt it was a great use of their time.&rdquo;</p>
+          <footer>Trina M., Project Manager, Idaho National Laboratory</footer>
+        </blockquote>
+        <blockquote>
+          <p>&ldquo;Great course, very well done and informative.&rdquo;</p>
+          <footer>Mykola M., Hydrogen Innovation Project Manager, AES</footer>
+        </blockquote>
       </div>
     </section>
 
@@ -86,41 +193,50 @@
       <div class="wrap insight-grid">
         <figure>
           <img src="assets/hydrogen-flame.jpg" alt="Thermal camera image of a hydrogen jet flame" width="832" height="612" loading="lazy">
-          <figcaption>Hydrogen burns almost invisibly in daylight. A thermal camera shows the flame.</figcaption>
+          <figcaption>Hydrogen flames are nearly invisible in daylight. Thermal imaging reveals them.</figcaption>
         </figure>
         <figure>
           <img src="assets/bess-rack.webp" alt="Battery module racks inside an energy storage enclosure with monitoring and detection equipment" width="1200" height="751" loading="lazy">
-          <figcaption>Battery rooms depend on layers: management systems, gas detection, suppression and spacing.</figcaption>
+          <figcaption>Energy storage safety depends on layered protection: battery management, gas detection, suppression and separation.</figcaption>
         </figure>
       </div>
     </section>
 
     <section id="about" class="about">
       <div class="wrap about-grid">
-        <img src="assets/mark.png" alt="" width="120" height="145">
+        <img class="headshot" src="assets/phil-clark.webp" alt="Phil Clark" width="800" height="1200" loading="lazy">
         <div>
           <p class="kicker">About</p>
-          <h2>Phil Clark, MS, CSP, CIH</h2>
-          <p>Phil is an environmental, health and safety professional and the founder of Omitz, LLC. He teaches the codes that govern hydrogen and energy storage to the people who design, build, permit and operate those systems.</p>
+          <h2>Phil Clark, MS, CIH, CSP</h2>
+          <p class="role">Founder and CEO, Omitz, LLC</p>
+          <p>Phil is a Certified Industrial Hygienist and Certified Safety Professional with more than 20 years of experience in environmental, health and safety. His career spans military operations, energy research, industrial hygiene, process safety and emerging technologies.</p>
+          <p>Since 2013 he has worked at the National Laboratory of the Rockies (formerly NREL), specializing in hydrogen safety, energy storage, hazard analysis, gas detection and nanomaterial safety. He is a lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety.</p>
+          <a href="about.html">Full biography &rarr;</a>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="wrap">
-        <h2>Bring a course to your team</h2>
-        <p>Message Phil on LinkedIn to schedule a session.</p>
-        <a class="button" href="https://www.linkedin.com/in/omitz">Message Phil</a>
+        <h2>Schedule training for your team</h2>
+        <p>Public courses, private sessions for your organization, or a question about which course fits. Contact Phil directly.</p>
+        <div class="actions centered">
+          <a class="button" href="mailto:phil.clark@omitz.io">phil.clark@omitz.io</a>
+          <a class="button ghost" href="https://www.linkedin.com/in/omitz">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <img src="assets/logo-white.png" alt="Omitz" width="120" height="43">
-      <p>&copy; <span id="year">2026</span> Omitz, LLC</p>
+      <a href="index.html"><img src="assets/logo-white.png" alt="Omitz home" width="120" height="43"></a>
+      <p>&copy; <span data-year>2026</span> Omitz, LLC &middot; Louisville, Colorado</p>
+    </div>
+    <div class="wrap footer-note">
+      <p>Omitz, LLC is an independent training company. References to the National Laboratory of the Rockies, the AIChE Center for Hydrogen Safety and other organizations describe Phil Clark&rsquo;s experience and do not imply their endorsement. NFPA 2 and NFPA 855 are codes of the National Fire Protection Association; Omitz courses are not affiliated with or endorsed by NFPA. <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="site.js" defer></script>
 </body>
 </html>
