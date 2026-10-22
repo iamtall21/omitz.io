@@ -3,19 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Phil Clark, MS, CIH, CSP | Omitz</title>
-  <meta name="description" content="Phil Clark, MS, CIH, CSP, founder and CEO of Omitz, LLC: more than 20 years in environmental, health and safety, specializing in hydrogen safety and energy storage.">
-  <meta property="og:title" content="About Phil Clark | Omitz">
-  <meta property="og:description" content="Founder and CEO of Omitz, LLC. Certified Industrial Hygienist and Certified Safety Professional specializing in hydrogen safety and energy storage.">
-  <meta property="og:type" content="profile">
+  <title>Phil Clark, MS, CIH, CSP: Hydrogen and Energy Storage Safety Instructor | Omitz</title>
+  <meta name="description" content="Phil Clark, MS, CIH, CSP: 20+ years in EHS, hydrogen safety at a national laboratory since 2013, lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety, founder of Omitz.">
+  <meta property="og:title" content="Phil Clark, MS, CIH, CSP: Hydrogen and Energy Storage Safety Instructor | Omitz">
+  <meta property="og:description" content="Phil Clark, MS, CIH, CSP: 20+ years in EHS, hydrogen safety at a national laboratory since 2013, lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety, founder of Omitz.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://omitz.io/about.html">
-  <meta property="og:image" content="https://omitz.io/assets/phil-clark.webp">
+  <meta property="og:image" content="https://omitz.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Omitz">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://omitz.io/about.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/raleway-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfilePage",
+   "url": "https://omitz.io/about.html",
+   "mainEntity": {
+    "@id": "https://omitz.io/#phil"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://omitz.io/#phil",
+   "name": "Phil Clark",
+   "honorificSuffix": "MS, CIH, CSP",
+   "jobTitle": "Founder and CEO",
+   "worksFor": {
+    "@id": "https://omitz.io/#org"
+   },
+   "image": "https://omitz.io/assets/phil-clark.webp",
+   "url": "https://omitz.io/about.html",
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Certified Industrial Hygienist (CIH)"
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "name": "Certified Safety Professional (CSP)"
+    }
+   ],
+   "knowsAbout": [
+    "Hydrogen safety",
+    "NFPA 2",
+    "NFPA 855",
+    "Battery energy storage systems",
+    "Industrial hygiene",
+    "Process safety",
+    "Gas detection",
+    "AI in environmental, health and safety practice"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/omitz"
+   ]
+  },
+  {
+   "@type": "EducationalOrganization",
+   "@id": "https://omitz.io/#org",
+   "name": "Omitz, LLC",
+   "url": "https://omitz.io/",
+   "logo": "https://omitz.io/assets/logo.png",
+   "slogan": "Authority on Insight",
+   "email": "phil.clark@omitz.io",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Louisville",
+    "addressRegion": "CO",
+    "addressCountry": "US"
+   },
+   "founder": {
+    "@id": "https://omitz.io/#phil"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/omitz"
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -23,7 +95,14 @@
     <div class="wrap">
       <a class="logo" href="index.html"><img src="assets/logo-white.png" alt="Omitz, Authority on Insight" width="160" height="57"></a>
       <nav aria-label="Main navigation">
-        <a href="training.html">Courses</a>
+        <div class="nav-menu">
+          <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="training-menu">Training</button>
+          <ul id="training-menu" class="nav-dropdown">
+            <li><a href="nfpa-2.html">NFPA 2<span>Hydrogen</span></a></li>
+            <li><a href="nfpa-855.html">NFPA 855<span>Energy storage</span></a></li>
+            <li><a href="ai-ethics.html">Ethical AI for ESH<span>Professional practice</span></a></li>
+          </ul>
+        </div>
         <a href="about.html" aria-current="page">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -36,7 +115,7 @@
         <div>
           <p class="eyebrow">About</p>
           <h1>Phil Clark, MS, CIH, CSP</h1>
-          <p class="lede">Founder and CEO, Omitz, LLC</p>
+          <p class="lede">Founder and CEO, Omitz, LLC. Industrial hygienist and safety professional who has spent his career where new energy technologies meet real hazards.</p>
           <ul class="bio-facts">
             <li>Certified Industrial Hygienist (CIH)</li>
             <li>Certified Safety Professional (CSP)</li>
@@ -47,29 +126,94 @@
       </div>
     </section>
 
-    <section class="bio">
-      <div class="wrap bio-body">
-        <p>Phil Clark is a Certified Industrial Hygienist, Certified Safety Professional and entrepreneur with more than 20 years of experience in environmental, health and safety. His career spans military operations, energy research, industrial hygiene, process safety and emerging technologies.</p>
+    <section class="stats" aria-label="Career highlights">
+      <div class="wrap stat-grid">
+        <div><strong>20+</strong><span>years in environmental, health and safety</span></div>
+        <div><strong>5</strong><span>years supporting U.S. Navy SEAL teams and naval aviation</span></div>
+        <div><strong>10</strong><span>years as a national laboratory&rsquo;s Hydrogen Safety Point of Contact</span></div>
+        <div><strong>2</strong><span>codes taught in depth: NFPA 2 and NFPA 855</span></div>
+      </div>
+    </section>
 
-        <h2>Experience</h2>
-        <p>Phil spent five years as an industrial hygienist supporting U.S. Navy SEAL teams and naval aviation maintenance operations. Since 2013 he has worked at the National Laboratory of the Rockies (formerly the National Renewable Energy Laboratory), where he specializes in hydrogen safety, energy storage systems, hazard analysis, gas detection systems and nanomaterial safety.</p>
-        <p>As the laboratory&rsquo;s Hydrogen Safety Point of Contact for a decade, he facilitated hazard analyses and risk assessments, led hazard-awareness training, oversaw the construction and operation of research hydrogen systems, and investigated off-normal events. His energy storage work has included destructive abuse testing of battery modules, onboarding large flow battery experiments and integrating battery systems into grid research.</p>
+    <section class="career">
+      <div class="wrap">
+        <p class="kicker">Career</p>
+        <h2>From the field to the classroom</h2>
+        <ol class="timeline">
+          <li>
+            <p class="when">Military operations &middot; 5 years</p>
+            <h3>Industrial hygienist, U.S. Navy</h3>
+            <p>Supported Navy SEAL teams and naval aviation maintenance operations, assessing exposures in some of the most demanding work environments there are.</p>
+          </li>
+          <li>
+            <p class="when">2013</p>
+            <h3>National Laboratory of the Rockies</h3>
+            <p>Joined the laboratory, then the National Renewable Energy Laboratory, specializing in hydrogen safety, energy storage, hazard analysis, gas detection and nanomaterial safety.</p>
+          </li>
+          <li>
+            <p class="when">A decade of hydrogen safety</p>
+            <h3>Hydrogen Safety Point of Contact</h3>
+            <p>Facilitated hazard analyses and risk assessments, led hazard-awareness training, oversaw construction and operation of research hydrogen systems, and investigated off-normal events.</p>
+          </li>
+          <li>
+            <p class="when">2016 edition of NFPA 2</p>
+            <h3>Code development</h3>
+            <p>Contributed to the standard permitting checklists developed with the NFPA 2 committee.</p>
+          </li>
+          <li>
+            <p class="when">Energy storage</p>
+            <h3>Battery safety in research</h3>
+            <p>Oversaw destructive abuse testing of battery modules, onboarded large flow battery experiments and guided the addition of battery systems to grid-integration research.</p>
+          </li>
+          <li>
+            <p class="when">Founder and CEO</p>
+            <h3>Omitz, LLC</h3>
+            <p>Founded Omitz to teach the codes that govern hydrogen and energy storage, with courses on NFPA 2 and NFPA 855.</p>
+          </li>
+          <li>
+            <p class="when">Center for Hydrogen Safety</p>
+            <h3>Lead NFPA 2 instructor</h3>
+            <p>Teaches NFPA 2 for the AIChE Center for Hydrogen Safety and serves on its Safety Culture Committee.</p>
+          </li>
+          <li>
+            <p class="when">2026</p>
+            <h3>AI in ESH practice</h3>
+            <p>Presented a full-day professional development course on ethical AI workflows at AIHA Connect, and contributed to the AIHA publication <em>Using AI to Enhance OEHS</em>.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-        <h2>Omitz</h2>
-        <p>Through Omitz, LLC, Phil provides technical consulting and professional training in hydrogen safety, battery energy storage and the practical application of safety standards, including NFPA 2 and NFPA 855. He serves as a lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety, is a member of the Center&rsquo;s Safety Culture Committee, and contributed to the standard permitting checklists developed for the 2016 edition of NFPA 2.</p>
+    <section class="expertise course-panel">
+      <div class="wrap">
+        <p class="kicker">Expertise</p>
+        <h2>Areas of focus</h2>
+        <ul class="chips">
+          <li>Hydrogen safety</li>
+          <li>Energy storage systems</li>
+          <li>Hazard analysis</li>
+          <li>Gas detection</li>
+          <li>Process safety</li>
+          <li>Industrial hygiene</li>
+          <li>Nanomaterial safety</li>
+          <li>AI in ESH practice</li>
+        </ul>
+      </div>
+    </section>
 
-        <h2>AI in ESH practice</h2>
-        <p>Phil is also interested in how artificial intelligence and automation can improve the way organizations work. He helps ESH professionals apply these tools while keeping sound professional judgment, ethical responsibility and appropriate human oversight. He contributed to the AIHA publication <em>Using AI to Enhance OEHS</em> and teaches professional development courses on AI for industrial hygiene and safety practice.</p>
-
-        <h2>Approach</h2>
-        <p>Phil combines technical expertise and field experience with a commitment to making complex safety and technology concepts understandable and useful. The company&rsquo;s guiding rule comes from Strunk and White: omit needless words.</p>
+    <section class="approach">
+      <div class="wrap">
+        <blockquote class="pull">
+          <p>Rule 17: &ldquo;Omit needless words.&rdquo;</p>
+          <footer>Phil combines technical expertise and field experience with a commitment to making complex safety and technology concepts understandable and useful. The company&rsquo;s name comes from that rule.</footer>
+        </blockquote>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="wrap">
-        <h2>Work with Phil</h2>
-        <p>Training, consulting or a question about the codes.</p>
+        <h2>Train with Phil</h2>
+        <p>Public courses, private sessions or a question about which course fits.</p>
         <div class="actions centered">
           <a class="button" href="mailto:phil.clark@omitz.io">phil.clark@omitz.io</a>
           <a class="button ghost" href="https://www.linkedin.com/in/omitz">LinkedIn</a>
@@ -80,12 +224,12 @@
   <footer class="site-footer">
     <div class="wrap">
       <a href="index.html"><img src="assets/logo-white.png" alt="Omitz home" width="120" height="43"></a>
-      <p>&copy; <span id="year">2026</span> Omitz, LLC &middot; Louisville, Colorado</p>
+      <p>&copy; <span data-year>2026</span> Omitz, LLC &middot; Louisville, Colorado</p>
     </div>
     <div class="wrap footer-note">
-      <p>Omitz, LLC participates in the U.S. Department of Energy Voucher Program, administered by ENERGYWERX. The content of this website is the responsibility of Omitz, LLC and does not necessarily represent the views of the U.S. Department of Energy or ENERGYWERX. Omitz, LLC is an independent company; references to the program, to the National Laboratory of the Rockies or to other organizations do not imply their endorsement. NFPA 2 and NFPA 855 are codes of the National Fire Protection Association; Omitz courses are not affiliated with or endorsed by NFPA.</p>
+      <p>Omitz, LLC is an independent training company. References to the National Laboratory of the Rockies, the AIChE Center for Hydrogen Safety and other organizations describe Phil Clark&rsquo;s experience and do not imply their endorsement. NFPA 2 and NFPA 855 are codes of the National Fire Protection Association; Omitz courses are not affiliated with or endorsed by NFPA. <a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="site.js" defer></script>
 </body>
 </html>
