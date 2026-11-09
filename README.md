@@ -7,9 +7,9 @@ The public homepage for Omitz, LLC. Plain HTML and CSS, no build step.
 - `about.html` is Phil's full biography
 - `doe-voucher.html` promotes DOE Voucher Opportunity 3 (Round 3, due Dec 16, 2026); the homepage banner linking to it hides itself after the deadline via `data-until`, but remove both once the round closes
 - `privacy.html` is the privacy notice
-- `site.js` runs the Training dropdown and footer year
+- `site.js` runs the Training dropdown and footer year, and loads the LinkedIn Insight Tag once `LINKEDIN_PARTNER_ID` is filled in (skipped when the browser sends Global Privacy Control; described on the privacy page)
 - `sitemap.xml` and `robots.txt` are for search engines; add new pages to the sitemap
-- Raleway is self-hosted in `assets/fonts/` (SIL Open Font License) so the site makes no third-party requests
+- Raleway is self-hosted in `assets/fonts/` (SIL Open Font License); the only third-party request is the LinkedIn Insight Tag
 - `style.css` is the styling
 - `CNAME` tells GitHub Pages to serve the site at omitz.io
 

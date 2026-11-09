@@ -272,3 +272,4 @@ figcaption { margin-top: 10px; color: var(--muted); font-size: .95rem; }
 .glance > div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 16px; }
 .glance dd { text-align: left; }
 @media (max-width: 560px) { .glance > div { grid-template-columns: 1fr; gap: 2px; } }
+.bio-body li { color: var(--muted); font-size: 1.05rem; margin: 6px 0; }
