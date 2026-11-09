@@ -10,3 +10,8 @@ document.querySelectorAll('.nav-menu').forEach(function (menu) {
   document.addEventListener('click', function (e) { if (!menu.contains(e.target)) setOpen(false); });
   menu.addEventListener('focusout', function (e) { if (!menu.contains(e.relatedTarget)) setOpen(false); });
 });
+
+document.querySelectorAll('[data-until]').forEach(function (el) {
+  var until = Date.parse(el.getAttribute('data-until'));
+  if (!isNaN(until) && Date.now() > until) el.hidden = true;
+});
