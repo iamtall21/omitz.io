@@ -30,3 +30,32 @@ var LINKEDIN_PARTNER_ID = '';
   s.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
   document.head.appendChild(s);
 })();
+
+// Voucher page: play the walkthrough video muted, unless the visitor prefers reduced motion.
+var signupVideo = document.getElementById('signup-video');
+if (signupVideo && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  signupVideo.muted = true;
+  var p = signupVideo.play();
+  if (p && p.catch) p.catch(function () {});
+}
+
+// Voucher page: copy buttons for the example answers.
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = document.getElementById(btn.getAttribute('data-copy')).innerText.trim();
+    function done() {
+      btn.textContent = 'Copied';
+      btn.setAttribute('data-done', '');
+      setTimeout(function () { btn.textContent = 'Copy'; btn.removeAttribute('data-done'); }, 2000);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function () {});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  });
+});
