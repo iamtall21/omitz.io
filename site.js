@@ -31,13 +31,19 @@ var LINKEDIN_PARTNER_ID = '';
   document.head.appendChild(s);
 })();
 
-// Voucher page: play the walkthrough video muted, unless the visitor prefers reduced motion.
-var signupVideo = document.getElementById('signup-video');
-if (signupVideo && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  signupVideo.muted = true;
-  var p = signupVideo.play();
-  if (p && p.catch) p.catch(function () {});
-}
+// Voucher page: the walkthrough GIF plays on its own; the button pauses it (shows a still),
+// and it starts paused when the visitor prefers reduced motion.
+document.querySelectorAll('.gif-toggle').forEach(function (btn) {
+  var img = document.getElementById(btn.getAttribute('data-gif'));
+  var gif = img.getAttribute('src'), still = img.getAttribute('data-still');
+  function setPaused(paused) {
+    img.src = paused ? still : gif;
+    btn.setAttribute('aria-pressed', String(paused));
+    btn.textContent = paused ? 'Play animation' : 'Pause animation';
+  }
+  btn.addEventListener('click', function () { setPaused(btn.getAttribute('aria-pressed') !== 'true'); });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setPaused(true);
+});
 
 // Voucher page: copy buttons for the example answers.
 document.querySelectorAll('[data-copy]').forEach(function (btn) {

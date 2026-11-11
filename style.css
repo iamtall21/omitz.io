@@ -282,7 +282,6 @@ figcaption { margin-top: 10px; color: var(--muted); font-size: .95rem; }
 .voucher-steps { grid-area: steps; }
 .voucher-hero h1 { font-size: clamp(1.8rem, 3vw, 2.25rem); margin-bottom: 12px; }
 .voucher-hero .lede { font-size: 1rem; margin-bottom: 16px; }
-.voucher-video video { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 12px; background: #0b0d29; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
 .voucher-video figcaption { color: #c9cde6; font-size: .9rem; }
 .quick-steps { counter-reset: q; list-style: none; margin: 0 0 22px; padding: 0; }
 .quick-steps li { counter-increment: q; position: relative; padding: 5px 0 5px 40px; color: #c9cde6; line-height: 1.45; }
@@ -325,3 +324,40 @@ figcaption { margin-top: 10px; color: var(--muted); font-size: .95rem; }
   .example-head { flex-wrap: wrap; }
 }
 .example-text mark { background: #fff3c4; color: inherit; padding: 0 2px; border-radius: 3px; }
+
+[hidden] { display: none !important; }
+
+/* Voucher callout: used on the homepage (overlapping the hero) and the course pages */
+.voucher-callout { padding: 40px 0; background: var(--panel); }
+.voucher-callout.vc-overlap { position: relative; z-index: 2; margin-top: -64px; padding: 0 0 8px; background: linear-gradient(transparent 64px, var(--navy-2) 64px); }
+.vc-overlap + .credentials { padding-top: 40px; }
+.vc-card { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 8px 32px; align-items: center; padding: 30px 32px 26px; border-radius: 14px; background: #fff; border: 3px solid var(--green); box-shadow: 0 18px 44px rgba(16,19,58,.28); }
+.vc-badge { position: absolute; top: -16px; left: 28px; margin: 0; padding: 5px 14px; border-radius: 999px; background: var(--green); color: var(--navy); font-weight: 800; font-size: .85rem; letter-spacing: .03em; box-shadow: 0 4px 12px rgba(16,19,58,.2); }
+.vc-text h2 { margin: 0 0 6px; font-size: 1.45rem; line-height: 1.25; }
+.vc-text p { margin: 0; color: var(--muted); }
+.vc-text strong { color: var(--ink); }
+.vc-actions { display: flex; flex-direction: column; gap: 10px; }
+.vc-actions .button { text-align: center; }
+.button.vc-ghost { background: #fff; color: var(--ink); border: 2px solid var(--teal); }
+
+.home-title { font-size: clamp(1.9rem, 3.6vw, 2.75rem); }
+.home-hero { padding-bottom: 104px; }
+
+.vc-pill { margin: 0 0 22px; }
+.vc-pill a { display: inline-block; padding: 8px 16px; border-radius: 999px; background: var(--green); color: var(--navy); text-decoration: none; font-weight: 600; box-shadow: 0 6px 16px rgba(0,0,0,.25); }
+.vc-pill a:hover { background: #b6dc6e; }
+.course-hero .actions .button.ghost { margin-left: 0; }
+.vc-price-note { margin: 14px 0 0; padding: 14px 18px; border-left: 5px solid var(--green); border-radius: 6px; background: #f3f8e9; }
+
+.voucher-video img { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 12px; background: #fff; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+.gif-toggle { font: inherit; font-size: .85rem; font-weight: 700; padding: 4px 12px; margin-right: 12px; border-radius: 6px; border: 1px solid #59618b; background: transparent; color: #fff; cursor: pointer; }
+.voucher-video figcaption a { color: #9fdde3; }
+
+@media (max-width: 820px) {
+  .vc-card { grid-template-columns: 1fr; padding: 30px 22px 22px; }
+  .vc-actions { flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 560px) {
+  .home-hero .hero-img { display: none; }
+  .home-title { font-size: 1.75rem; }
+}

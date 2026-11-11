@@ -34,7 +34,7 @@
           </ul>
         </div>
         <a href="about.html">About</a>
-        <a href="#contact">Contact</a>
+        <a href="mailto:phil.clark@omitz.io">Contact</a>
       </nav>
     </div>
   </header>
@@ -48,16 +48,13 @@
           <p class="lede">The DOE Voucher Program can provide live, in-person safety training from Omitz at no cost to your department. It takes one application on the EnergyWerx form, about 20 minutes.</p>
         </div>
         <figure class="voucher-video">
-          <video id="signup-video" controls muted playsinline preload="metadata" poster="assets/video/vo3-3-sign-up-poster.webp" width="1280" height="720" aria-describedby="video-note">
-            <source src="assets/video/vo3-3-sign-up.mp4" type="video/mp4">
-            <a href="assets/video/vo3-3-sign-up.mp4">Download the 35-second walkthrough video</a>
-          </video>
-          <figcaption id="video-note">35-second walkthrough of the form. Sound is off; turn it on in the player.</figcaption>
+          <img id="signup-gif" src="assets/video/vo3-3-sign-up.gif" data-still="assets/video/vo3-3-sign-up-poster.webp" alt="Animated walkthrough of the EnergyWerx form: enter contact info, pick the technology area, choose VO3-3 as Capability Choice 1, answer five questions, agree and submit." width="640" height="360" fetchpriority="high">
+          <figcaption><button type="button" class="gif-toggle" aria-pressed="false" data-gif="signup-gif">Pause animation</button> <a href="assets/video/vo3-3-sign-up.mp4">Watch the video with sound</a></figcaption>
         </figure>
         <div class="voucher-steps">
           <ol class="quick-steps">
             <li><strong>Contact and department info.</strong> Name, address with ZIP+4, and your UEI if you have one.</li>
-            <li><strong>Technology area.</strong> Hydrogen, or Long-duration energy storage for BESS.</li>
+            <li><strong>Technology area.</strong> Pick one: Hydrogen <em>or</em> Long-duration energy storage (BESS). <strong>You don&rsquo;t need both.</strong></li>
             <li class="key-step"><strong>Capability Choice 1: VO3-3.</strong> VO3-3 is Omitz. Pick it first.</li>
             <li><strong>Five short questions.</strong> Use our <a href="#examples">example answers</a> as a starting point.</li>
             <li><strong>Agree and submit</strong> by December 16 at 3:00 PM ET.</li>
@@ -90,7 +87,7 @@
           </li>
           <li>
             <h3>Technology area</h3>
-            <p>Pick <strong>Long-duration energy storage</strong> for battery storage (BESS) sites, or <strong>Hydrogen</strong> for hydrogen production, storage or fueling. Choose the one that matches the project you&rsquo;re most focused on. VO3-3 covers both.</p>
+            <p>Pick <strong>one</strong>: <strong>Long-duration energy storage</strong> for battery storage (BESS) sites, or <strong>Hydrogen</strong> for hydrogen production, storage or fueling. <strong>You don&rsquo;t need both.</strong> A department with only a BESS project, or only a hydrogen project, qualifies the same way. VO3-3 covers either one.</p>
           </li>
           <li class="key-step">
             <h3>Capability Choice 1: VO3-3 (Omitz)</h3>
@@ -113,7 +110,7 @@
               <button type="button" class="copy-btn" data-copy="ex-tech" aria-describedby="ex-tech-label">Copy</button>
             </div>
             <p class="example-q">Form asks: &ldquo;Please describe your technology briefly, including typical system size (e.g., MW and duration) and use cases.&rdquo;</p>
-            <div class="example-text" id="ex-tech"><mark>[Town/County]</mark> has <mark>[two]</mark> energy projects in planning that our department will review, inspect and protect:
+            <div class="example-text" id="ex-tech"><mark>[Town/County]</mark> has <mark>[a BESS project / a hydrogen project / both]</mark> in planning that our department will review, inspect and protect. <mark>[Keep only the bullet that applies.]</mark>
 
 - A <mark>[100 MW / 400 MWh]</mark> lithium-ion battery energy storage system (BESS) proposed at <mark>[location]</mark>, to <mark>[store solar generation and support the local grid]</mark>.
 - A <mark>[hydrogen fueling station / 5 MW electrolyzer]</mark> at <mark>[location]</mark>, serving <mark>[transit buses / an industrial user]</mark>.
@@ -185,7 +182,7 @@ Our role is plan review, inspection and emergency response for these sites. We e
           </article>
           <article>
             <h3>Taught by a practitioner</h3>
-            <p>Phil Clark, MS, CIH, CSP, has worked on hydrogen and energy storage safety at a national laboratory since 2013 and is a lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety.</p>
+            <p>Phil Clark, MS, CIH, CSP, has worked on hydrogen and energy storage safety at a U.S. Department of Energy research facility since 2013 and is a lead NFPA 2 instructor for the AIChE Center for Hydrogen Safety.</p>
           </article>
         </div>
         <ul class="chips voucher-courses" aria-label="Omitz courses">
