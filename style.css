@@ -361,3 +361,24 @@ figcaption { margin-top: 10px; color: var(--muted); font-size: .95rem; }
   .home-hero .hero-img { display: none; }
   .home-title { font-size: 1.75rem; }
 }
+
+/* Starred DOE Voucher link in the main nav (hides after the deadline via data-until) */
+nav a.nav-voucher { margin-left: 0; padding: 7px 14px; border-radius: 999px; background: var(--green); color: var(--navy); font-weight: 800; text-decoration: none; box-shadow: 0 0 0 3px rgba(163,206,83,.25); }
+nav a.nav-voucher:hover, nav a.nav-voucher[aria-current="page"] { background: #b6dc6e; color: var(--navy); text-decoration: none; }
+nav a.nav-voucher span[aria-hidden] { color: var(--navy); }
+@media (max-width: 560px) {
+  nav a.nav-voucher { padding: 5px 10px; font-size: .9rem; }
+  .nv-long { display: none; }
+  .site-header .logo img { height: 28px; }
+  nav a, .nav-menu { margin-left: 10px; }
+  .nav-toggle, nav a { font-size: .9rem; }
+}
+nav a, .nav-toggle { white-space: nowrap; }
+@media (max-width: 560px) {
+  .site-header .wrap { padding: 0 12px; }
+  .site-header .logo img { height: 24px; }
+  nav a, .nav-menu { margin-left: 9px; }
+  .nav-toggle, nav a { font-size: .85rem; }
+  .nav-toggle::after { margin-left: 5px; }
+  nav a.nav-voucher { padding: 4px 9px; margin-left: 0; }
+}
